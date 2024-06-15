@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wordpress
+spec:
+  containers:
+  - name: wordpress
+    image: 1askat9/mywordpress:1.0
+  imagePullSecrets:
+  - name: my-secret  
